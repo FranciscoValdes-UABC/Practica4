@@ -76,9 +76,6 @@ public class Plano : MonoBehaviour
     void Update()
     {
         t += Time.deltaTime;
-        /*transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, angulo);
-        cubo.transform.position = transform.position + transform.up * 0.65f;
-        cubo.transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, angulo);*/
 
         velocidad = aceleracion * t;
         posicion = posIn + 0.5f * (aceleracion * Mathf.Pow(t, 2));
